@@ -1,0 +1,20 @@
+{
+  "name": "railbuilder",
+  "version": "1.0.0",
+  "description": "Click anywhere on an endless low-poly map to build a station; track and a train follow. A lighter demo of the Train of Thought train engine.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5184 --strictPort",
+    "build": "vite build",
+    "test": "node --test \"src/*.test.js\"",
+    "sync-engine": "node scripts/sync-engine.mjs",
+    "deploy": "vite build && vercel deploy dist --prod --yes"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
