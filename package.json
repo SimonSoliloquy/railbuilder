@@ -9,7 +9,7 @@
     "build": "vite build",
     "test": "node --test \"src/*.test.js\"",
     "sync-engine": "node scripts/sync-engine.mjs",
-    "deploy": "vite build && vercel deploy dist --prod --yes"
+    "deploy": "vercel deploy --prod --yes"
   },
   "dependencies": {
     "three": "^0.187.0"
