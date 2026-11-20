@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 5184 --strictPort",
-    "build": "vite build",
+    "build": "vite build --base=/railbuilder/",
     "test": "node --test \"src/*.test.js\"",
     "sync-engine": "node scripts/sync-engine.mjs",
-    "deploy": "vercel deploy --prod --yes"
+    "deploy": "sh tools/cf-build.sh && npx wrangler@4.40.0 deploy"
   },
   "dependencies": {
     "three": "^0.187.0"
